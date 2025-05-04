@@ -14,6 +14,13 @@
 
 ---
 
+## 🖼️ 見た目
+
+以下は **Keyword Grouping / One-Click Keyword Addition** パネルを  
+画面上にフロート表示させた例です。
+
+![Floating Keyword Panel](./images/panel-float.png "フローティングパネルの表示例")
+
 ## 🚀 インストール方法
 
 1. WebUI の `extensions` フォルダへクローン  

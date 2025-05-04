@@ -1,0 +1,73 @@
+.physton-gradio-container {
+  /* グループタグ：フォントサイズ */
+  --pp-pt-gt-gh-groupTab-font-size: 12px !important;
+  --pp-pt-gt-gb-gm-sgh-subGroupTab-font-size: 10px !important;
+  /* グループタグ：テキスト周囲のパディング */
+  --pp-pt-gt-gh-groupTab-padding: 6px 6px !important;
+  /* グループタグ：タブの折り返し制御 */
+  --pp-pt-gt-groupHeader-flex-wrap: wrap !important;
+
+  /* グループタグ：候補のフォントサイズ */
+  --pp-pt-gt-gb-gm-sgm-gt-ti-tagLocal-font-size: 10px !important;
+  --pp-pt-gt-gb-gm-sgm-gt-ti-tagEn-font-size: 10px !important;
+
+  /* グループタグ：表示/非表示ボタンの向き（非表示） */
+  --pp-pt-pal-showGroupTagsHided-transform: rotate(90deg) !important;
+  /* グループタグ：表示/非表示ボタンの位置 */
+  --pp-pt-pal-showGroupTags-margin-top: 0px !important;
+}
+
+.group-header, .sub-group-header {
+  /* グループタブ：タブの枠線 */
+  border-top: 1px solid #404040 !important;
+  border-left: 1px solid #404040 !important;
+}
+.group-tab, .sub-group-tab {
+  /* グループタブ：タブの枠線 */
+  border-bottom: 1px solid #404040 !important;
+  border-right: 1px solid #404040 !important;
+}
+
+/* グループタブ：ポップアップ表示風 */
+div.svelte-vt1mxs {
+  position: initial !important;
+}
+#txt2img_prompt_container > #phystonPrompt_txt2img_prompt *> .group-tabs {
+  /* グループタブ：ポジティブプロンプト用 */
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 100%;
+  z-index: 999;
+  background-color: #111111;
+  border: 2px solid black;
+  padding: 4px;
+  width: 90%;
+  transform: translateX(5%);
+  top: 5%;
+}
+#txt2img_prompt_container > #phystonPrompt_txt2img_neg_prompt *> .group-tabs {
+  /* グループタブ：ネガティブプロンプト用 */
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 100%;
+  z-index: 999;
+  background-color: #111111;
+  border: 2px solid black;
+  padding: 4px;
+  width: 90%;
+  transform: translateX(5%);
+  top: 20%;
+}
+.show-group-tags {
+  /* グループタグ：表示/非表示ボタンの向き（表示） */
+  transform: rotate(-90deg);
+  /* グループタグ：表示/非表示ボタンの位置 */
+  position: absolute !important;
+  top: 10px;
+}
+.prompt-main {
+  /* グループタグ：表示/非表示ボタンの位置 */
+  position: relative;
+}
